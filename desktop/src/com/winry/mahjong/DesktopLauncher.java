@@ -1,8 +1,7 @@
-package com.winry.desktop;
+package com.winry.mahjong;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.winry.App;
 
 public class DesktopLauncher {
 

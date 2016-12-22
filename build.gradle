@@ -41,6 +41,9 @@ project(":desktop") {
         compile "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
         compile "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
+        compile "io.netty:netty-all:4.1.6.Final"
+        compile "com.google.protobuf:protobuf-java:3.0.0"
+
     }
 }
 

@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package message;
+
+option java_package = "com.winry.mahjong";
+
+message PacketMSG {
+    oneof msg {
+        LoginReq loginReq = 1;
+        ReadyReq readyReq = 2;
+        ReachReq reachReq = 3;
+        TsumoReq tsumoReq = 4;
+        DiscardReq discardReq = 5;
+        Heartbeat heartbeat = 6;
+    }
+}
+
+message LoginReq {
+    string name = 1;
+    //  required string	pass   	= 2;
+}
+
+message LoginResp {
+    int64 id = 1;
+}
+
+message ReadyReq {
+
+}
+
+message GameStartResp {
+
+}
+
+message ReachReq {
+    int32 toDiscard = 1;
+}
+
+message ReachResp {
+}
+
+message TsumoReq {
+}
+
+message DiscardReq {
+    int32 toDiscard = 1;
+}
+
+message Heartbeat {
+
+}
